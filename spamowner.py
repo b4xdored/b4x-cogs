@@ -22,15 +22,15 @@ class spam:
             await self.bot.send_message(user, "{}".format(spamtext, ctx.message.author))
             counter = counter + 1
             if counter == 1:
-                await self.bot.say("Hehe, {} got spammed {} time!".format(user.mention, counter))
+                await self.bot.say("Hehehehe {} got spammmeedd {} times ;p !".format(user.mention, counter))
             else:
-                await self.bot.say("Hehe, {} got spammed {} times!".format(user.mention, counter))
+                await self.bot.say("Hehehehe, {} got spammmeed {} times!".format(user.mention, counter))
     @checks.is_owner()
     @commands.command(hidden=True, pass_context=True)
     async def aspam(self, ctx, user : discord.Member, spamtext, number : int=None):
         """Spams x times anonymously, default is 10."""
         if user.id == "96987941519237120" or user.id == "166179284266778624":
-            await self.bot.say("Hell nah, I ain't spamming him.")
+            await self.bot.say("Hell nah, I ain't spamming him ;P .")
             return
         if number == None:
             number = 10
